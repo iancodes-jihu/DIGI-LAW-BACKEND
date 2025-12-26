@@ -1,0 +1,116 @@
+{
+	"metadata": {
+		"nama_dataset": "Dataset Pasal UU ITE",
+		"deskripsi": "Dataset pasal hukum untuk pemetaan teks",
+		"versi": "1.0",
+		"bahasa": "id",
+		"tanggal": "YYYY-MM-DD"
+	},
+
+	"kategori": {
+		"penghinaan_personal": {
+			"kode": "KAT-01",
+			"nama": "Penghinaan Personal",
+			"deskripsi": "",
+			"pasal": [
+				{
+					"urutan": 1,
+					"id": "",
+					"undang_undang": "UU ITE",
+					"pasal": "",
+					"ayat": "",
+					"judul": "",
+					"teks_pasal": ""
+				},
+				{
+					"urutan": 2,
+					"id": "",
+					"undang_undang": "UU ITE",
+					"pasal": "",
+					"ayat": "",
+					"judul": "",
+					"teks_pasal": ""
+				}
+			]
+		},
+
+		"hoaks": {
+			"kode": "KAT-02",
+			"nama": "Hoaks",
+			"deskripsi": "",
+			"pasal": [
+				{
+					"urutan": 1,
+					"id": "",
+					"undang_undang": "UU ITE",
+					"pasal": "",
+					"ayat": "",
+					"judul": "",
+					"teks_pasal": ""
+				},
+				{
+					"urutan": 2,
+					"id": "",
+					"undang_undang": "UU ITE",
+					"pasal": "",
+					"ayat": "",
+					"judul": "",
+					"teks_pasal": ""
+				}
+			]
+		},
+
+		"ancaman": {
+			"kode": "KAT-03",
+			"nama": "Ancaman",
+			"deskripsi": "",
+			"pasal": [
+				{
+					"urutan": 1,
+					"id": "",
+					"undang_undang": "UU ITE",
+					"pasal": "",
+					"ayat": "",
+					"judul": "",
+					"teks_pasal": ""
+				},
+				{
+					"urutan": 2,
+					"id": "",
+					"undang_undang": "UU ITE",
+					"pasal": "",
+					"ayat": "",
+					"judul": "",
+					"teks_pasal": ""
+				}
+			]
+		},
+
+		"sara": {
+			"kode": "KAT-04",
+			"nama": "SARA",
+			"deskripsi": "",
+			"pasal": [
+				{
+					"urutan": 1,
+					"id": "",
+					"undang_undang": "UU ITE",
+					"pasal": "",
+					"ayat": "",
+					"judul": "",
+					"teks_pasal": ""
+				},
+				{
+					"urutan": 2,
+					"id": "",
+					"undang_undang": "UU ITE",
+					"pasal": "",
+					"ayat": "",
+					"judul": "",
+					"teks_pasal": ""
+				}
+			]
+		}
+
+	}
+}
