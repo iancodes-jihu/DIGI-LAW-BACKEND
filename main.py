@@ -1,5 +1,6 @@
-from data.model import predict as model_predict
 from flask import request, jsonify, Flask
+from data.steaming import Steaming
+from data.rules import rules
 
 app = Flask(__name__)
 
@@ -7,7 +8,7 @@ app = Flask(__name__)
 def status():
     return jsonify({"status": "ok"})
 
-@app.route('/predict', methods=['POST'])
+@app.route('/normalize', methods=['POST'])
 def predict():
 
     data = request.get_json()
@@ -16,7 +17,18 @@ def predict():
     if not text:
         return jsonify({"error": "No text provided"}), 400
 
-    result = model_predict(text)
+    result = Steaming().normalizeText(text)
+    return jsonify(result)
+
+@app.route('/rule', methods=['POST'])
+def detect():
+    data = request.get_json()
+    text = data.get('text', '')
+
+    if not text:
+        return jsonify({"error": "No text provided"}), 400
+    
+    result = rules().getJsonResponse(text)
     return jsonify(result)
 
 if __name__ == '__main__':
