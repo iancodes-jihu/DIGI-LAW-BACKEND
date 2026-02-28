@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "nama_dataset": "Dataset Pasal UU ITE",
+    "deskripsi": "Dataset pasal hukum untuk pemetaan teks",
+    "versi": "1.0",
+    "bahasa": "id",
+    "tanggal": "2026-02-20"
+  },
+  "kategori": {
+    "penghinaan_personal": {
+      "kode": "KAT-01",
+      "nama": "Penghinaan Personal",
+      "keywords": ["ancaman", "hina", "goblok", "tolol"],
+      "list": [
+        {
+          "pasal": "27",
+          "ayat": "(1)",
+          "keyword": ["bodoh"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "Setiap Orang dengan sengaja dan tanpa hak menyiarkan, mempertunjukkan, mendistribusikan, mentransmisikan, dan/atau membuat dapat diaksesnya Informasi Elektronik dan/ atau Dokumen Elektronik yang memiliki muatan yang melanggar kesusilaan untuk diketahui umum.",
+          "unsur": "Unsur Siapa: 'Setiap Orang' dalam pasal tersebut merujuk pada subjek hukum secara luas yang mencakup orang perseorangan (individu) maupun badan hukum (korporasi): Orang Perseorangan Siapapun secara pribadi baik warga negara Indonesia, Warga negara asing, maupun badan hukum yang mengunggah foto atau video asusila ke media sosial publik, menyebarkan konten pornografi melalui grup percakapan yang bersifat terbuka, atau dengan sengaja mengirimkan materi melanggar kesusilaan kepada orang lain tanpa diminta demi motif pribadi atau popularitas. Badan Hukum: Perusahaan perseorangan atau perusahaan persekutuan, baik yang berbadan hukum maupun yang tidak berbadan hukum yang secara sengaja menyediakan, mengelola, atau mengoperasikan platform digital (seperti situs web atau aplikasi) yang ditujukan khusus untuk memuat dan mendistribusikan konten melanggar kesusilaan secara sistematis demi mendapatkan keuntungan finansial atau komersial. Unsur sikap batin (means rea): 'engan sengaja dan tanpa hak',menegaskan adanya niat batin (mens rea) pelaku untuk menyebarluaskan Informasi atau Dokumen Elektronik secara sadar,meskipun ia tidak memiliki kewenangan atau dasar hukum yang sah untuk melakukannya. Unsur Cara Melakukan Objek: Menyiarkan: Mengirimkan informasi kepada banyak orang (publik). Mempertunjukkan: Memperlihatkan konten sehingga bisa dilihat orang lain. Mendistribusikan: Mengirimkan/membagikan kepada pihak lain. Mentransmisikan: Mengirimkan dari satu titik ke titik lain (misal: chatting). Membuat dapat diakses: Tindakan teknis yang menyebabkan orang lain bisa melihat atau mengunduh konten tersebut (misal: mengunggah ke server atau memberikan link). Unsur Objek: Informasi Elektronik dan/atau Dokumen Elektronik yang bermuatan 'melanggar kesusilaan' adalah konten digital berupa foto/video telanjang, adegan seks eksplisit, tulisan/cerita vulgar, suara bernuansa seksual eksplisit, atau gambar bergerak (termasuk kartun/animasi) yang menggambarkan aktivitas seksual secara terbuka dan tidak layak untuk umum. Dalam konteks internet, muatan semacam ini sering disebut sebagai cyberporn, yaitu materi pornografi yang disebar secara online melalui situs, media sosial, atau platform digital lainnya, baik dalam bentuk gambar, video, tulisan, maupun percakapan seksual eksplisit. Unsur Muatan: 'melanggar kesusilaan untuk diketahui umum', artinya perbuatan disini spesifik hanya untuk tindakan melanggar kesusilaan yang di mana dianggap melanggar hukum jika konten asusila tersebut sengaja dipublikasikan, dikirimkan, atau dibuat agar dapat diakses oleh khalayak ramai.",
+          "penafsiran": [
+            "1. Menyiarkan termasuk perbuatan mentransmisikan, mendistribusikan, dan membuat dapat diaksesnya informasi elektronik dan / atau dokumen elektronik dalam sistem elektronik",
+            "2. Mendistribusikan adalah mengirimkan dan/atau menyebarkan informasi elektronik dan/atau dokumen elektronik kepada banyak orang atau berbagai pihak melalui sistem elektronik",
+            "3. Mentransmisikan adalah mengirimkan informasi elektronik dan/atau dokumen elektronik yang ditujukan kepada pihak lain melalui sistem elektronik",
+            "4. Membuat dapat diakses adalah semua perbuatan lain selain mendistribusikan melalui sistem elektronik yang menyebabkan informasi elektronik dan/atau dokumen elektronik dapan diketahui pihak lain atau publik",
+            "5. melanggar kesusilaan adalah melakukan perbuatan yang mempertenjukkan ketelanjangan alat kelamin dan aktifitas seksual yang bertentangan dengan nilai-nilai yang hidup dalam masyarakat ditempat dan waktu perbuatan tersebut dilakukan",
+            "6. Diketahui umum adalah untuk dapat atau sehingga dapat diakses oleh kumpulan orang banyak yang sebagaian besar tidak saling mengenal."
+          ],
+          "keterangan pidana": "Pidana pasal 45 ayat (1),dipidana dengan pidana penjara paling lama 6 (enam) tahun dan /atau denda paling banyak Rp.1.000.000.000.00(satu milliar rupiah).",
+          "keterangan perdata": "",
+          "penjelasan": "Pasal ini pada dasarnya melarang setiap orang untuk menyebarluaskan konten digital yang melanggar norma kesusilaan secara sengaja dan tanpa hak, baik melalui cara mendistribusikan, mentransmisikan, maupun membuat konten tersebut dapat diakses oleh orang lain melalui sistem elektronik. Poin krusial dalam aturan ini terletak pada unsur 'untuk diketahui umum', yang berarti perbuatan tersebut hanya dikategorikan sebagai tindak pidana jika konten asusila tersebut sengaja ditujukan agar dapat dilihat atau diakses oleh masyarakat luas di ruang publik digital. Oleh karena itu, tindakan yang bersifat privat atau untuk kepentingan pribadi tidak termasuk dalam jeratan pasal ini, namun jika unsur penyebaran publik terpenuhi, pelaku diancam dengan sanksi serius berupa pidana penjara maksimal 6 tahun dan/atau denda paling banyak Rp1 miliar."
+        },
+        {
+          "pasal": "27",
+          "ayat": "(2)",
+          "keyword": ["Judi", "Slot", "Sabung Ayam", "Parlay", "Domino", "Kartu jitak", "remi", "kasino", "togel", "lotre", "poker", "bingo"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "setiap orang dengan sengaja dan tanpa hak mentransmisikan dan/atau membuat dapat diaksesnya informasi elektronik dan/atau dokumen elektronik yang memiliki muatan perjudian ",
+          "unsur": "Unsur subjektif: 'Setiap Orang'Subjek hukum yang bisa dimintai pertanggung jawaban,baik itu individu(perorangan) maupun korporasi(badan usaha).Unsur Kesalahan: 'Dengan sengaja' pelaku memiliki kehendak dan kesadaran untuk melakukan perbuatan tersebut.Artinya,ia tahyu bahwa konten yang disebarkan adalah konten judi.'Unsur Melawan Hukum: 'Tanpa Hak' Pelaku tidak memiliki izin resmi dari pihak berwenang(pemerintah) untuk menyelenggarakan atau menyebarkan informasi perjudian tersebut,mengingat di indonesia judi dilarang,hampir semua aktivitas ini otomatis masuk kategori'tanpa hak'. Unsur perbuatan(Actus Reus):Mendistribusikan  Mengirimkan atau membagikan konten judi kepada pihak lain.Mentransmisikan: Mengirimkan informasi melalui jaringan telekomunikasi/internet (misal: mengirim link judi via WhatsApp). Membuat Dapat Diakses: Menyediakan sarana agar orang lain bisa melihat atau masuk ke situs judi (misal: mengunggah konten iklan judi di website atau media sosial). Unsur Objek 'Informasi Elektronik dan/atau Dokumen Elektronik' Bentuknya bisa berupa situs web, aplikasi perjudian, gambar/banner iklan judi, link (URL), hingga pesan teks berisi tawaran taruhan. Unsur Muatan: ' Memiliki Muatan perjudian'Konten tersebut harus mengandung unsur permainan yang menawarkan keuntungan dengan mendasarkan pada peruntungan (nasib) atau kemahiran, dan melibatkan adanya taruhan.",
+          "penafsiran": "1.Mendistribusikan adalah mengirimkan dan/atau menyebarkan informasi elektronik dan/atau dokumen elektronik kepada banyak orang atau berbagai pihak melalui sistem elektronik,2.Mentransmisikan adalah mengirimkan informasi elektronik dan/atau dokumen elektronik yang ditujukan kepada pihak lain melalui sistem elektronik,3.Membuat dapat diakses adalah semua perbuatan lain selain mendistribusikan melalui sistem elektronik yangv menyebabkan informasi elektronik dan/atau dokumen elektronik dapan diketahui pihak lain atau publik,4.perjudian dalam hal menawarkan atau memberikan kesempatan untuk permainan judi menjadikannya sebagaimata pencaharian,menawarkan atau memberikan kesempatan kepada umum untuk bermain judi dan turut serta dalam perusaan untuk itu.",
+          "keterangan pidana": "Pidana pasal 45 ayat (3),dipidana dengan pidana penjara paling lama 10(sepuluh) tahun dan/atau denda paling banyak Rp.10.000.000.000.00(sepuluh milliar rupiah)",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        },
+        {
+          "pasal": "27A",
+          "ayat": "",
+          "keyword": ["KORUPTOR BANGSAT"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "Setiap orang dengan sengaja menyerang,kehormatan atau nama baik orang lain dengan cara menuduhkan suatu hal,dengan maksud supaya hal tersebut diketahui secara umum dalam bentuk informasi elektronik dan/atau dokumen elektronik yang dilakukan dalam sistem elektronik.",
+          "unsur": "Unsur Subjektif: 'setiap Orang'Individu atau badan hukum yang melakukan perbuatan tersebut.Unsur Kesalahan:'Demgan Sengaja'Pelaku memiliki niat dan kesadaran penuh untuk menyerang kehormatan orang lain. Ini bukan ketidaksengajaan atau kekhilafan teknis.Unsur Perbuatan(Actus Reus)'Menyerang Kehormatan atau Nama Baik'Perbuatan yang dilakukan haruslah merendahkan martabat, harga diri, atau reputasi seseorang di mata masyarakat.'Dengan Cara Menuduhkan Suatu Hal'Pelaku menyatakan suatu peristiwa atau keadaan (baik fakta maupun karangan) yang dikaitkan dengan orang tertentu,Penting:Jika yang disampaikan adalah kritik, pendapat, atau penilaian subjektif tanpa tuduhan fakta spesifik, biasanya sulit dijerat dengan pasal ini.Unsur Maksud/tujuan'Dengan Maksud Supaya Hal Tersebut Diketahui Umum'Pelaku bertujuan agar informasi negatif tersebut tersebar luas dan dibaca/diketahui oleh orang banyak (publik), bukan sekadar konsumsi pribadi atau obrolan privat satu lawan satu.Unsur Sarana(Objek Elektronik)'Dalam bentuk informasi Elektronik dan/atau Dokumen Elektronik'Bisa berupa status media sosial, cuitan (tweet), video TikTok/Reels, komentar di kolom berita, atau unggahan di blog.'Yang Dilakukan Sistem Elektronik'Menggunakan perangkat teknologi informasi (HP, komputer) dan jaringan internet/telekomunikasi. ",
+          "penafsiran": "1.Menyerang kehormatan dan nama baik adalah perbuatan yang merendahkan atau merusak nama baik atau harga diri orang lain sehingga merugikan orang tersebut,termasuk menista dan/atau memfitnah.",
+          "keterangan pidana": "pidana pasal 45 ayat (4), dipidana dengan pidana penjara paling lama 2(dua) tahun dan/atau denda paling banyak Rp.400.000.000.00 (empat ratus juta rupiah),ayat (6) jika tidak terbukti akan di anggap fitnah dan dapat dipidana penjara paling lama 4 (empat) tahun dan/atau denda paling banyak Rp.750.000.000.00 (Tujuh ratus lima puluh juta rupiah). ",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        }
+      ]
+    },
+    "hutang": {
+      "kode": "KAT-02",
+      "nama": "Hutang",
+      "deskripsi": "",
+      "pasal": [
+        {
+          "pasal": "27B",
+          "ayat": "1",
+          "keyword": ["Pinjol", "Penggadaian", "Paylater"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "Setiap orang dengan sengaja mendistribusikan dan/atau menstransmisikan informasi elektronik dan/atau dokumen elektronik, dengan maksud menguntungkan diri sendiri atau orang lain secara melawan hukum, memaksa orang dengan ancaman kekerasan untuk:a.memberikan suatu barang,yang sebagian atau seluruhnya milik orang tersebut atau milik orang lain; atau b.memberi utang, membuat pengakuan utang, atau menghapuskan piutang.",
+          "unsur": "Unsur Subjektif & Kesalahan: 'Setiap Orang'Subjek hukum (individu atau korporasi).'Dengan Sengaja'Ada niat jahat (dolus) dari pelaku untuk melakukan pengancaman tersebut.'Tanpa Hak'Pelaku tidak memiliki dasar hukum yang sah untuk melakukan tindakan tersebut (misal: penagih utang yang menggunakan ancaman kekerasan di luar prosedur hukum).Unsur Maksud(Niat Spesifik:'Untuk Menguntungkan Diri Sendiri atau Orang Lain'Pelaku memiliki motivasi memperkaya diri atau pihak ketiga.'Secara Melawan Hukum'Keuntungan yang diperoleh tidak didasari hak yang sah atau melanggar peraturan perundang-undangan.Unsur Cara/Tindakan(Modus Operandi)'mendistribusikan dan/atau Menstranmisikan'Melalui pengiriman pesan teks, email, video, atau dokumen elektronik lainnya.'Memaksa Orang dengan Ancaman Kekerasan'Ada tekanan fisik atau psikis yang sangat kuat sehingga korban merasa tidak punya pilihan selain menuruti kemauan pelaku.Catatan: Dalam dunia digital, ancaman kekerasan bisa berupa ancaman akan mendatangi rumah secara fisik untuk menyakiti atau menggunakan data pribadi untuk memfasilitasi kekerasan.Unsur Objek Yang Disasar(Tujuan Pemasaran) Pasal ini secara spesifik menyebutkan tujuan pemerasan tersebut haruslah untuk:poin (a): Memberikan suatu barang Barang tersebut bisa milik pribadi, milik korporasi (perusahaan), milik profesi, atau berkaitan dengan jabatan korban. Contoh: Mengancam admin perusahaan agar mentransfer aset perusahaan ke rekening pribadi pelaku.Poin (b): Terkait Utang Piutang Poin (b): Terkait Utang Piutang Memaksa korban meminjamkan uang.Membuat pengakuan utang: Memaksa korban menandatangani atau menyetujui dokumen yang menyatakan korban berutang (padahal mungkin tidak).Menghapuskan piutang: Memaksa korban untuk menganggap utang pelaku sudah lunas/hangus",
+          "penafsiran": "1.Mendistribusikan adalah mengirimkan dan/atau menyebarkan informasi elektronik dan/atau dokumen elektronik kepada banyak orang atau berbagai pihak melalui sistem elektronik,2.Mentransmisikan adalah mengirimkan informasi elektronik dan/atau dokumen elektronik yang ditujukan kepada pihak lain melalui sistem elektronik,3.ancaman kekerasan adalah informasi elektronik dan/atau dokumenb elektronik yang berii muatan yang di tunjukkan untuk menimbulkan rasa takut,cemas,atau khawatir akan dilakukannya kekerasan",
+          "keterangan pidana": "Pidana pasal 45 ayat (8),dipidana dengan pidana penjara paling lama 6(enam) tahun dan/atau denda paling banyak Rp1.000.000.000.00 (satu milliar rupiah)",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        },
+        {
+          "pasal": "27B",
+          "ayat": "2",
+          "keyword": [""],
+          "tahun": "11/2024",
+          "bunyi_pasal": "Setiap Orang dengan sengaja dan tanpa hak mendistribusikan, mentransmisikan, dan/atau Informasi Elektronik dan/ atau Dokumen Elektronik,dengan makdus untuk menguntungkan diri sendiri atau oarang lain secara melawan hukum,dengan ancaman pencemaran atau dengan ancaman akan membuka rahasia,memaksa orang supaya:a.memberikan suatu barang sebagian atau seluruhnya milik orang tersebut atau milik orang lain:b.memberi utang,membuat pengakuan utang,atau menghapuskan piutang",
+          "unsur": "1. Unsur Subjektif & Kesalahan Setiap Orang: Subjek hukum (individu atau korporasi) \"Dengan Sengaja\": Ada niat jahat (dolus) dari pelaku untuk melakukan pengancaman tersebut. \"Tanpa Hak\": Pelaku tidak memiliki dasar hukum yang sah untuk melakukan tindakan tersebut (misal: penagih utang yang menggunakan ancaman kekerasan di luar prosedur hukum). 2. Unsur Maksud (Niat Spesifik) \"Untuk Menguntungkan Diri Sendiri atau Orang Lain\": Pelaku memiliki motivasi memperkaya diri atau pihak ketiga \"Secara Melawan Hukum\": Keuntungan yang diperoleh tidak didasari hak yang sah atau melanggar peraturan perundang-undangan. 3. Unsur Cara/Tindakan (Modus Operandi) \"Mendistribusikan dan/atau Mentransmisikan\": Melalui pengiriman pesan teks, email, video, atau dokumen elektronik lainnya. \"Memaksa Orang dengan Ancaman Kekerasan\": Ada tekanan fisik atau psikis yang sangat kuat sehingga korban merasa tidak punya pilihan selain menuruti kemauan pelaku. Catatan: Dalam dunia digital, ancaman kekerasan bisa berupa ancaman akan mendatangi rumah secara fisik untuk menyakiti atau menggunakan data pribadi untuk memfasilitasi kekerasan. 4. Unsur Objek yang Disasar (Tujuan Pemerasan) Pasal ini secara spesifik menyebutkan tujuan pemerasan tersebut haruslah",
+          "penafsiran": "1.Mendistribusikan adalah mengirimkan dan/atau menyebarkan informasi elektronik dan/atau dokumen elektronik kepada banyak orang atau berbagai pihak melalui sistem elektronik,2.Mentransmisikan adalah mengirimkan informasi elektronik dan/atau dokumen elektronik yang ditujukan kepada pihak lain melalui sistem elektronik,3.ancaman pencemaran adalah ancaman menyerang kehormatan atau nama baik orang lain dengan cara menuduhkan suatu hal dengan maksud supaya hal tersebut diketahui umum.",
+          "penjelasan_ancaman_pidana": "pidana pasal 45 ayat (10),dipidana dengan pidana penjara paling lama 6(enam)tahun dan/atau denda paling banyak Rp1.000.000.000.00 (satu milliar rupiah)",
+          "penjelasan": ""
+        }
+      ]
+    },
+    "ancaman": {
+      "kode": "KAT-03",
+      "nama": "Ancaman",
+      "deskripsi": "",
+      "pasal": [
+        {
+          "pasal": "28",
+          "ayat": "1",
+          "keyword": ["bodoh"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "Setap orang dengan sengaja dan/atau mentransmisikan Informasi Elektronik dan/ atau Dokumen Elektronik yang berisi pemberitahuan bohong atau informasi menyesatkan yang mengakibatkan kerugian materiel bagi konsumen dalam Transaksi Elektronik.",
+          "unsur": "",
+          "penafsiran": "",
+          "keterangan pidana": "",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        }
+      ]
+    },
+    "sara_28_2": {
+      "kode": "KAT-04",
+      "nama": "SARA",
+      "deskripsi": "",
+      "pasal": [
+        {
+          "pasal": "28",
+          "ayat": "2",
+          "keyword": ["bodoh"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "setiap orang  dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan Informasi Elektronik dan/atau Dokumen Elektronik yang sifatnya menghasut, mengajak, atau memengaruhi orang lain sehingga menimbulkan rasa kebencian atau permusuhan terhadap individu dan/atau kelompok masyarakat tertentu berdasarkan ras, kebangsaan, etnis, warna kulit, agama, kepercayaan, jenis kelamin, disabilitas mental, atau disabilitas fisik.",
+          "unsur": "",
+          "penafsiran": "",
+          "keterangan pidana": "",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        }
+      ]
+    },
+    "sara_28_3": {
+      "kode": "KAT-04",
+      "nama": "SARA",
+      "deskripsi": "",
+      "pasal": [
+        {
+          "pasal": "28",
+          "ayat": "3",
+          "keyword": ["bodoh"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "Setiap Orang dengan sengaja menyebarkan Informasi Elektronik dan/atau Dokumen Elektronik yang diketahuinya memuat pemberitahuan bohong yang menimbulkan kerusuhan di masyarakat.",
+          "unsur": "",
+          "penafsiran": "",
+          "keterangan pidana": "",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        }
+      ]
+    },
+    "sara_29_1": {
+      "kode": "KAT-04",
+      "nama": "SARA",
+      "deskripsi": "",
+      "pasal": [
+        {
+          "pasal": "29",
+          "ayat": "1",
+          "keyword": ["bodoh"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "Setiap Orang dengan sengaja dan tanpa hak mengirimkan Informasi Elektronik dan/atau dokumen Elektronik secara langsung kepada korban yang berisi ancaman kekerasan dan/ atau menakut-nakuti.",
+          "unsur": "",
+          "penafsiran": "",
+          "keterangan pidana": "",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        }
+      ]
+    },
+    "sara_30_1": {
+      "kode": "KAT-04",
+      "nama": "SARA",
+      "deskripsi": "",
+      "pasal": [
+        {
+          "pasal": "30",
+          "ayat": "1",
+          "keyword": ["bodoh"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "Setiap Orang dengan sengaja dan tanpa hak atau melawan hukum mengakses Komputer dan/atau Sistem Elektronik milik Orang lain dengan cara apa pun.",
+          "unsur": "",
+          "penafsiran": "",
+          "keterangan pidana": "",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        }
+      ]
+    },
+    "sara_30_2": {
+      "kode": "KAT-04",
+      "nama": "SARA",
+      "deskripsi": "",
+      "pasal": [
+        {
+          "pasal": "30",
+          "ayat": "2",
+          "keyword": ["bodoh"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "Setiap Orang dengan sengaja dan tanpa hak atau melawan hukum mengakses Komputer dan/atau Sistem Elektronik dengan cara apa pun dengan tujuan untuk memperoleh Informasi Elektronik dan/atau Dokumen Elektronik.",
+          "unsur": "",
+          "penafsiran": "",
+          "keterangan pidana": "",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        }
+      ]
+    },
+    "sara_30_3": {
+      "kode": "KAT-04",
+      "nama": "SARA",
+      "deskripsi": "",
+      "pasal": [
+        {
+          "pasal": "30",
+          "ayat": "3",
+          "keyword": ["bodoh"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "(3) Ketentuan sebagaimana dimaksud pada ayat (l) dan ayat (2) tidak berlaku terhadap intersepsi atau penyadapan yang dilakukan dalam rangka penegakan hukum atas permintaan kepolisian, kejaksaan, atau institusi lainnya yang kewenangannya ditetapkanberdasarkan undangundang.",
+          "unsur": "",
+          "penafsiran": "",
+          "keterangan pidana": "",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        }
+      ]
+    },
+    "sara_30_4": {
+      "kode": "KAT-04",
+      "nama": "SARA",
+      "deskripsi": "",
+      "pasal": [
+        {
+          "pasal": "30",
+          "ayat": "4",
+          "keyword": ["bodoh"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "(4) Ketentuan lebih lanjut mengenai tata cara intersepsi sebagaimana dimaksud pada ayat (3) diatur dengan undang-undang.",
+          "unsur": "",
+          "penafsiran": "",
+          "keterangan pidana": "",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        }
+      ]
+    },
+    "sara_31_1": {
+      "kode": "KAT-04",
+      "nama": "SARA",
+      "deskripsi": "",
+      "pasal": [
+        {
+          "pasal": "31",
+          "ayat": "1",
+          "keyword": ["bodoh"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "Setiap Orang dengan sengaja dan tanpa hak atau melawan hukum melakukan intersepsi atau penyadapan atas Informasi Elektronik dan/atau Dokumen Elektronik dalam suatu Komputer dan/atau Sistem Elektronik tertentu milik Orang lain",
+          "unsur": "",
+          "penafsiran": "",
+          "keterangan pidana": "",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        }
+      ]
+    },
+    "sara_31_1_alt": {
+      "kode": "KAT-04",
+      "nama": "SARA",
+      "deskripsi": "",
+      "pasal": [
+        {
+          "pasal": "31",
+          "ayat": "1",
+          "keyword": ["bodoh"],
+          "tahun": "11/2024",
+          "bunyi_pasal": "(1) Setiap Orang dengan sengaja dan tanpa hak atau melawan hukum melakukan intersepsi atau penyadapan atas Informasi Elektronik dan/atau Dokumen Elektronik dalam suatu Komputer dan/atau Sistem Elektronik tertentu milik Orang lain.",
+          "unsur": "",
+          "penafsiran": "",
+          "keterangan pidana": "",
+          "keterangan perdata": "",
+          "penjelasan": ""
+        }
+      ]
+    }
+  }
+}
