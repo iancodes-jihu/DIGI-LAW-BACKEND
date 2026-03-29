@@ -244,9 +244,12 @@ export default function AnalyzeBox() {
                 <button
                     onClick={() => handleAnalyze('rule')}
                     disabled={loading}
-                    className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[var(--bg-primary)] border border-[var(--border-primary)] text-xs text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] hover:border-[var(--danger)] disabled:opacity-40"
+                    className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-md border text-xs disabled:opacity-40"
+                    style={{ background: 'var(--bg-tertiary)', color: 'var(--text-primary)', border: '1px solid var(--border-primary)' }}
+                    onMouseEnter={(e) => e.target.style.background = 'var(--bg-secondary)'}
+                    onMouseLeave={(e) => e.target.style.background = 'var(--bg-tertiary)'}
                 >
-                    <Shield size={13} className="text-[var(--danger)]" />
+                    <Shield size={13} style={{ color: 'var(--text-primary)' }} />
                     Deteksi
                 </button>
 

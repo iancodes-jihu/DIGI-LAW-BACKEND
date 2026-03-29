@@ -5,8 +5,10 @@ export default function Navbar({ onToggleSidebar, theme, toggleTheme }) {
         <header className="fixed top-0 left-0 right-0 z-50 h-12 flex items-center gap-2 sm:gap-3 px-3 sm:px-4 border-b" style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border-primary)' }}>
             <button
                 onClick={onToggleSidebar}
-                className="p-1.5 rounded-md border border-[var(--border-secondary)] hover:border-[var(--accent)] transition-colors shrink-0"
-                style={{ color: 'var(--text-secondary)' }}
+                className="p-1.5 rounded-md shrink-0"
+                style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', border: '1px solid var(--border-primary)' }}
+                onMouseEnter={(e) => e.target.style.background = 'var(--bg-tertiary)'}
+                onMouseLeave={(e) => e.target.style.background = 'var(--bg-secondary)'}
                 aria-label="Toggle sidebar"
             >
                 <Menu size={18} />
