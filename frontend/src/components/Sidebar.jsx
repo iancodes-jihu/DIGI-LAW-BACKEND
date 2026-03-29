@@ -19,21 +19,21 @@ export default function Sidebar({ isOpen, onClose }) {
         <>
             {isOpen && (
                 <div
-                    className="fixed inset-0 z-30 bg-black/50 lg:hidden"
+                    className="fixed inset-0 z-30 lg:hidden"
+                    style={{ background: 'var(--overlay)' }}
                     onClick={onClose}
                 />
             )}
 
-            <aside className={`
+            <aside className="
                 fixed top-12 left-0 bottom-0 z-40 w-64
-                bg-[#161b22] border-r border-[#30363d]
                 overflow-y-auto transition-transform duration-300
                 ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
-            `}>
+            " style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border-primary)' }}>
                 <div className="px-4 py-5">
 
                     {/* Header */}
-                    <h2 className="text-[#e6edf3] text-sm font-semibold mb-4">
+                    <h2 className="text-[var(--text-primary)] text-sm font-semibold mb-4">
                         Analisis Terbaru
                     </h2>
 
@@ -41,40 +41,43 @@ export default function Sidebar({ isOpen, onClose }) {
                     <ul className="space-y-4">
                         {recentAnalyses.map((item) => (
                             <li key={item.id}>
-                                <button className="w-full flex items-start gap-3 text-left group hover:opacity-80 transition-opacity">
+                                <button
+                                    className="w-full flex items-start gap-3 text-left group hover:opacity-80 transition-opacity border rounded-lg px-3 py-2"
+                                    style={{ background: 'var(--bg-primary)', borderColor: 'var(--border-primary)' }}
+                                >
                                     <span className={`mt-1.5 w-2 h-2 rounded-full shrink-0 ${dotColor[item.status]}`} />
                                     <div className="flex-1 min-w-0">
-                                        <p className="text-[#7d8590] text-[11px] mb-0.5">{item.time}</p>
-                                        <p className="text-[#e6edf3] text-xs font-semibold truncate leading-snug">{item.title}</p>
-                                        <p className="text-[#7d8590] text-[11px] mt-0.5 leading-snug line-clamp-2">{item.desc}</p>
+                                        <p className="text-[var(--text-secondary)] text-[11px] mb-0.5">{item.time}</p>
+                                        <p className="text-[var(--text-primary)] text-xs font-semibold truncate leading-snug">{item.title}</p>
+                                        <p className="text-[var(--text-secondary)] text-[11px] mt-0.5 leading-snug line-clamp-2">{item.desc}</p>
                                     </div>
                                 </button>
                             </li>
                         ))}
                     </ul>
 
-                    <button className="w-full mt-5 text-xs text-[#7d8590] hover:text-[#e6edf3] transition-colors py-1.5 text-left">
+                    <button className="w-full mt-5 text-xs text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors py-1.5 text-left">
                         Lihat semua →
                     </button>
 
-                    <div className="border-t border-[#21262d] my-5" />
+                    <div className="border-t border-[var(--border-secondary)] my-5" />
 
                     {/* Stats */}
-                    <h2 className="text-[#e6edf3] text-sm font-semibold mb-3">
+                    <h2 className="text-[var(--text-primary)] text-sm font-semibold mb-3">
                         Statistik Hari Ini
                     </h2>
 
                     <div className="space-y-2.5">
                         {[
-                            { label: 'Total Analisis', value: '47', dot: 'bg-[#58a6ff]' },
-                            { label: 'Terdeteksi Berbahaya', value: '12', dot: 'bg-[#f85149]' },
-                            { label: 'Perlu Perhatian', value: '8', dot: 'bg-[#d29922]' },
-                            { label: 'Aman', value: '27', dot: 'bg-[#3fb950]' },
+                            { label: 'Total Analisis', value: '47', dot: 'bg-[var(--accent)]' },
+                            { label: 'Terdeteksi Berbahaya', value: '12', dot: 'bg-[var(--danger,#f85149)]' },
+                            { label: 'Perlu Perhatian', value: '8', dot: 'bg-[var(--warning,#d29922)]' },
+                            { label: 'Aman', value: '27', dot: 'bg-[var(--success)]' },
                         ].map(({ label, value, dot }) => (
                             <div key={label} className="flex items-center gap-2.5">
                                 <span className={`w-2 h-2 rounded-full shrink-0 ${dot}`} />
-                                <span className="text-[#7d8590] text-xs flex-1">{label}</span>
-                                <span className="text-[#e6edf3] text-xs font-semibold">{value}</span>
+                                <span className="text-[var(--text-secondary)] text-xs flex-1">{label}</span>
+                                <span className="text-[var(--text-primary)] text-xs font-semibold">{value}</span>
                             </div>
                         ))}
                     </div>

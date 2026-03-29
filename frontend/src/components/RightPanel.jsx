@@ -38,10 +38,10 @@ export default function RightPanel() {
     return (
         <aside className="w-full space-y-4">
             {/* Changelog */}
-            <div className="bg-[#161b22] border border-[#4a5568] rounded-lg p-4">
+            <div className="rounded-lg p-4" style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border-primary)' }}>
                 <div className="flex items-center gap-2 mb-3">
-                    <Zap size={15} className="text-[#d29922]" />
-                    <h3 className="text-[#e6edf3] text-sm font-semibold">Pembaruan Terbaru</h3>
+                    <Zap size={15} style={{ color: 'var(--warning)' }} />
+                    <h3 className="text-[var(--text-primary)] text-sm font-semibold">Pembaruan Terbaru</h3>
                 </div>
                 <ul className="space-y-3">
                     {changelog.map((item, i) => (
@@ -50,9 +50,9 @@ export default function RightPanel() {
                                 <div className={`w-2 h-2 rounded-full ${item.color}`} />
                             </div>
                             <div>
-                                <p className="text-[10px] text-[#7d8590] mb-0.5">{item.time}</p>
-                                <p className="text-xs text-[#e6edf3] font-medium leading-snug">{item.title}</p>
-                                <p className="text-[11px] text-[#7d8590] leading-snug mt-0.5">{item.desc}</p>
+                                <p className="text-[10px] text-[var(--text-secondary)] mb-0.5">{item.time}</p>
+                                <p className="text-xs text-[var(--text-primary)] font-medium leading-snug">{item.title}</p>
+                                <p className="text-[11px] text-[var(--text-secondary)] leading-snug mt-0.5">{item.desc}</p>
                             </div>
                         </li>
                     ))}
@@ -60,17 +60,20 @@ export default function RightPanel() {
             </div>
 
             {/* Legal References */}
-            <div className="bg-[#161b22] border border-[#4a5568] rounded-lg p-4">
+            <div className="rounded-lg p-4" style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border-primary)' }}>
                 <div className="flex items-center gap-2 mb-3">
-                    <BookOpen size={15} className="text-[#58a6ff]" />
-                    <h3 className="text-[#e6edf3] text-sm font-semibold">Referensi Hukum</h3>
+                    <BookOpen size={15} style={{ color: '#58a6ff' }} />
+                    <h3 className="text-[var(--text-primary)] text-sm font-semibold">Referensi Hukum</h3>
                 </div>
                 <ul className="space-y-1.5">
                     {legalRefs.map((ref) => (
                         <li key={ref.label}>
                             <a
                                 href={ref.href}
-                                className="flex items-center justify-between text-xs text-[#58a6ff] hover:text-[#79c0ff] border border-[#1f6feb]/50 hover:border-[#388bfd] rounded px-2 py-1 transition-colors group"
+                                className="flex items-center justify-between text-xs rounded px-2 py-1 transition-colors group"
+                                style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', border: '1px solid var(--border-primary)' }}
+                                onMouseEnter={(e) => e.target.style.background = 'var(--bg-tertiary)'}
+                                onMouseLeave={(e) => e.target.style.background = 'var(--bg-secondary)'}
                             >
                                 {ref.label}
                                 <ExternalLink size={11} className="opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -81,10 +84,10 @@ export default function RightPanel() {
             </div>
 
             {/* API Status */}
-            <div className="bg-[#161b22] border border-[#4a5568] rounded-lg p-4">
+            <div className="rounded-lg p-4" style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border-primary)' }}>
                 <div className="flex items-center gap-2 mb-3">
-                    <Shield size={15} className="text-[#3fb950]" />
-                    <h3 className="text-[#e6edf3] text-sm font-semibold">Status API</h3>
+                    <Shield size={15} style={{ color: '#3fb950' }} />
+                    <h3 className="text-[var(--text-primary)] text-sm font-semibold">Status API</h3>
                 </div>
                 <div className="space-y-2">
                     {[
@@ -93,7 +96,7 @@ export default function RightPanel() {
                         { name: '/rule', status: 'Operasional', ok: true },
                     ].map((ep) => (
                         <div key={ep.name} className="flex items-center justify-between">
-                            <code className="text-[11px] text-[#7d8590] font-mono">{ep.name}</code>
+                            <code className="text-[11px] text-[var(--text-secondary)] font-mono">{ep.name}</code>
                             <div className="flex items-center gap-1">
                                 <div className={`w-1.5 h-1.5 rounded-full ${ep.ok ? 'bg-[#3fb950]' : 'bg-[#f85149]'}`} />
                                 <span className={`text-[10px] ${ep.ok ? 'text-[#3fb950]' : 'text-[#f85149]'}`}>
@@ -103,8 +106,8 @@ export default function RightPanel() {
                         </div>
                     ))}
                 </div>
-                <div className="mt-3 pt-3 border-t border-[#30363d]">
-                    <div className="flex items-center gap-1.5 text-[11px] text-[#7d8590]">
+                <div className="mt-3 pt-3 border-t border-[var(--border-primary)]">
+                    <div className="flex items-center gap-1.5 text-[11px] text-[var(--text-secondary)]">
                         <Info size={11} />
                         <span>Cerebras llama-3.3-70b · Latency ~800ms</span>
                     </div>

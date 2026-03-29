@@ -20,15 +20,15 @@ function ResultCard({ result, mode }) {
 
     if (mode === 'normalize') {
         return (
-            <div className="mt-4 w-full bg-[#0d1117] border border-[#30363d] rounded-lg overflow-hidden">
-                <div className="flex items-center justify-between px-4 py-2 border-b border-[#30363d] bg-[#161b22]">
+            <div className="mt-4 w-full rounded-lg overflow-hidden" style={{ background: 'var(--bg-primary)', borderColor: 'var(--border-primary)' }}>
+                <div className="flex items-center justify-between px-4 py-2 border-b" style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border-primary)' }}>
                     <div className="flex items-center gap-2">
-                        <CheckCircle size={14} className="text-[#3fb950]" />
-                        <span className="text-xs text-[#e6edf3] font-medium">Hasil Normalisasi</span>
+                        <CheckCircle size={14} style={{ color: '#3fb950' }} />
+                        <span className="text-xs font-medium" style={{ color: 'var(--text-primary)' }}>Hasil Normalisasi</span>
                     </div>
                     <button
                         onClick={handleCopy}
-                        className="flex items-center gap-1 text-[11px] text-[#7d8590] hover:text-[#e6edf3]"
+                        className="flex items-center gap-1 text-[11px]" style={{ color: 'var(--text-secondary)' }} onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'} onMouseLeave={(e) => e.target.style.color = 'var(--text-secondary)'}
                     >
                         <Copy size={12} />
                         {copied ? 'Disalin!' : 'Salin'}
@@ -36,7 +36,7 @@ function ResultCard({ result, mode }) {
                 </div>
 
                 <div className="p-4">
-                    <p className="text-[#e6edf3] text-sm leading-relaxed break-words">
+                    <p className="text-sm leading-relaxed break-words" style={{ color: 'var(--text-primary)' }}>
                         {result.normalized_text || result}
                     </p>
                 </div>
@@ -66,16 +66,16 @@ function ResultCard({ result, mode }) {
                 </div>
 
                 <div className="flex items-center gap-2 text-[11px]">
-                    <span className="text-[#7d8590]">
+                    <span style={{ color: 'var(--text-secondary)' }}>
                         Kepercayaan:
-                        <span className="text-[#e6edf3] font-medium ml-1">
+                        <span style={{ color: 'var(--text-primary)' }} className="font-medium ml-1">
                             {((confidence || 0) * 100).toFixed(1)}%
                         </span>
                     </span>
 
                     <button
                         onClick={handleCopy}
-                        className="flex items-center gap-1 text-[#7d8590] hover:text-[#e6edf3]"
+                        className="flex items-center gap-1" style={{ color: 'var(--text-secondary)' }} onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'} onMouseLeave={(e) => e.target.style.color = 'var(--text-secondary)'}
                     >
                         <Copy size={12} />
                         {copied ? 'Disalin!' : 'Salin'}
@@ -83,15 +83,15 @@ function ResultCard({ result, mode }) {
                 </div>
             </div>
 
-            <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-3 bg-[#0d1117]">
+            <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-3" style={{ background: 'var(--bg-primary)' }}>
                 <InfoBlock label="Target" value={has_target ? (target_type || '—') : 'Tidak ada'} />
                 <InfoBlock label="Nada Menyerang" value={has_attack_tone ? 'Ya' : 'Tidak'} highlight={has_attack_tone} />
                 <InfoBlock label="Jenis Serangan" value={attack_type?.length ? attack_type.join(', ') : '—'} />
                 <InfoBlock label="Ancaman" value={threat_type?.length ? threat_type.join(', ') : '—'} danger={has_threat} />
             </div>
 
-            <details className="bg-[#0d1117] border-t border-[#30363d]">
-                <summary className="px-4 py-2 text-[11px] text-[#7d8590] hover:text-[#e6edf3] cursor-pointer">
+            <details style={{ background: 'var(--bg-primary)', borderColor: 'var(--border-primary)' }} className="border-t">
+                <summary className="px-4 py-2 text-[11px] cursor-pointer" style={{ color: 'var(--text-secondary)' }} onMouseEnter={(e) => e.target.style.color = 'var(--text-primary)'} onMouseLeave={(e) => e.target.style.color = 'var(--text-secondary)'}>
                     Lihat JSON mentah
                 </summary>
 
@@ -105,16 +105,14 @@ function ResultCard({ result, mode }) {
 
 function InfoBlock({ label, value, highlight, danger }) {
     return (
-        <div className="bg-[#161b22] rounded-md p-3 border border-[#30363d]">
-            <p className="text-[#7d8590] text-[10px] uppercase tracking-wider mb-1">
+        <div className="rounded-md p-3" style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border-primary)' }}>
+            <p className="text-[10px] uppercase tracking-wider mb-1" style={{ color: 'var(--text-secondary)' }}>
                 {label}
             </p>
 
-            <p className={`text-xs font-medium capitalize ${
-                danger ? 'text-[#f85149]' :
-                highlight ? 'text-[#d29922]' :
-                'text-[#e6edf3]'
-            }`}>
+            <p className="text-xs font-medium capitalize" style={{
+                color: danger ? '#f85149' : highlight ? '#d29922' : 'var(--text-primary)'
+            }}>
                 {value}
             </p>
         </div>
@@ -122,6 +120,13 @@ function InfoBlock({ label, value, highlight, danger }) {
 }
 
 export default function AnalyzeBox() {
+    // Debug CSS variables
+    useEffect(() => {
+        console.log('CSS Variables:');
+        console.log('--bg-tertiary:', getComputedStyle(document.documentElement).getPropertyValue('--bg-tertiary'));
+        console.log('--bg-primary:', getComputedStyle(document.documentElement).getPropertyValue('--bg-primary'));
+        console.log('--text-primary:', getComputedStyle(document.documentElement).getPropertyValue('--text-primary'));
+    }, []);
     const [text, setText] = useState('')
     const [mode, setMode] = useState('rule')
     const [loading, setLoading] = useState(false)
@@ -183,7 +188,7 @@ export default function AnalyzeBox() {
     }
 
     return (
-        <div className="w-full max-w-3xl mx-auto bg-[#161b22] border border-[#4a5568] rounded-xl p-4 sm:p-5">
+        <div className="w-full max-w-3xl mx-auto rounded-xl p-4 sm:p-5" style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border-primary)' }}>
 
             <div className="relative">
                 <textarea
@@ -192,10 +197,11 @@ export default function AnalyzeBox() {
                     onKeyDown={handleKeyDown}
                     placeholder="Masukkan teks untuk dianalisis... (Ctrl+Enter untuk kirim)"
                     rows={4}
-                    className="w-full min-h-[110px] bg-[#0d1117] border border-[#4a5568] rounded-lg px-4 py-3 text-sm text-[#e6edf3] placeholder-[#7d8590] outline-none resize-none focus:border-[#1f6feb]"
+                    className="w-full min-h-[110px] rounded-lg px-4 py-3 text-sm outline-none resize-none focus:border-[var(--accent)]"
+                    style={{ background: 'var(--bg-primary)', borderColor: 'var(--border-primary)', color: 'var(--text-primary)' }}
                 />
 
-                <div className="absolute bottom-2.5 right-2.5 text-[10px] text-[#7d8590]">
+                <div className="absolute bottom-2.5 right-2.5 text-[10px]" style={{ color: 'var(--text-secondary)' }}>
                     {text.length}/2000
                 </div>
             </div>
@@ -205,24 +211,26 @@ export default function AnalyzeBox() {
                 <div className="relative" ref={menuRef}>
                     <button
                         onClick={() => setShowModeMenu((v) => !v)}
-                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#21262d] border border-[#4a5568] text-xs text-[#e6edf3] hover:bg-[#30363d] hover:border-[#58a6ff]"
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-md border text-xs"
+                        style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', border: '1px solid var(--border-primary)' }}
+                        onMouseEnter={(e) => e.target.style.background = 'var(--bg-tertiary)'}
+                        onMouseLeave={(e) => e.target.style.background = 'var(--bg-secondary)'}
                     >
                         <ModeIcon size={13} className={activeMode.color} />
                         <span>{activeMode.label}</span>
-                        <ChevronDown size={12} className="text-[#7d8590]" />
+                        <ChevronDown size={12} style={{ color: 'var(--text-secondary)' }} />
                     </button>
 
                     {showModeMenu && (
-                        <div className="absolute top-full mt-1 left-0 z-10 bg-[#1c2128] border border-[#30363d] rounded-lg shadow-xl overflow-hidden w-44">
+                        <div className="absolute top-full mt-1 left-0 z-10 rounded-lg shadow-xl overflow-hidden w-44" style={{ background: 'var(--bg-secondary)', borderColor: 'var(--border-primary)' }}>
                             {modes.map((m) => {
                                 const MIcon = m.icon
                                 return (
                                     <button
                                         key={m.id}
                                         onClick={() => { setMode(m.id); setShowModeMenu(false) }}
-                                        className={`w-full flex items-center gap-2 px-3 py-2 text-xs hover:bg-[#30363d] text-left ${
-                                            mode === m.id ? 'text-[#58a6ff]' : 'text-[#e6edf3]'
-                                        }`}
+                                        className={`w-full flex items-center gap-2 px-3 py-2 text-xs text-left`}
+                                        style={{ color: mode === m.id ? 'var(--accent)' : 'var(--text-primary)' }}
                                     >
                                         <MIcon size={13} className={m.color} />
                                         {m.label}
@@ -236,25 +244,31 @@ export default function AnalyzeBox() {
                 <button
                     onClick={() => handleAnalyze('rule')}
                     disabled={loading}
-                    className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#21262d] border border-[#4a5568] text-xs text-[#e6edf3] hover:bg-[#30363d] hover:border-[#f85149] disabled:opacity-40"
+                    className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[var(--bg-primary)] border border-[var(--border-primary)] text-xs text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] hover:border-[var(--danger)] disabled:opacity-40"
                 >
-                    <Shield size={13} className="text-[#f85149]" />
+                    <Shield size={13} className="text-[var(--danger)]" />
                     Deteksi
                 </button>
 
                 <button
                     onClick={() => handleAnalyze('normalize')}
                     disabled={loading}
-                    className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#21262d] border border-[#4a5568] text-xs text-[#e6edf3] hover:bg-[#30363d] hover:border-[#3fb950] disabled:opacity-40"
+                    className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-md border text-xs disabled:opacity-40"
+                    style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', border: '1px solid var(--border-primary)' }}
+                    onMouseEnter={(e) => e.target.style.background = 'var(--bg-tertiary)'}
+                    onMouseLeave={(e) => e.target.style.background = 'var(--bg-secondary)'}
                 >
-                    <Wand2 size={13} className="text-[#3fb950]" />
+                    <Wand2 size={13} style={{ color: 'var(--text-primary)' }} />
                     Normalisasi
                 </button>
 
                 <button
                     onClick={() => handleAnalyze()}
                     disabled={!text.trim() || loading}
-                    className="sm:ml-auto w-full sm:w-auto flex justify-center items-center gap-1.5 px-4 py-1.5 rounded-md bg-[#238636] border border-[#2ea043] text-white text-xs font-medium hover:bg-[#2ea043] hover:border-[#3fb950] disabled:opacity-40"
+                    className="sm:ml-auto w-full sm:w-auto flex justify-center items-center gap-1.5 px-4 py-1.5 rounded-md border text-xs font-medium disabled:opacity-40"
+                    style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', border: '1px solid var(--border-primary)' }}
+                    onMouseEnter={(e) => e.target.style.background = 'var(--bg-tertiary)'}
+                    onMouseLeave={(e) => e.target.style.background = 'var(--bg-secondary)'}
                 >
                     {loading ? (
                         <Loader2 size={13} className="animate-spin" />

@@ -63,7 +63,7 @@ function FeedItem({ item }) {
 
   return (
     <div className={`border rounded-xl overflow-hidden ${cfg.border} ${cfg.hoverBorder} hover:brightness-110 transition-all cursor-pointer`}>
-      <div className="p-3 sm:p-4 bg-[#161b22]">
+      <div className="p-3 sm:p-4 bg-[var(--bg-secondary)]">
         {/* Top Row */}
         <div className="flex items-start gap-3">
           {/* Icon */}
@@ -75,11 +75,11 @@ function FeedItem({ item }) {
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 flex-wrap mb-1">
               {/* Type badge */}
-              <span className={`text-[10px] px-2 py-0.5 rounded-full font-medium border ${
-                item.type === 'rule'
-                  ? 'text-[#58a6ff] bg-[#1f2d3d] border-[#1f6feb]/40'
-                  : 'text-[#3fb950] bg-[#1f2414] border-[#3fb950]/30'
-              }`}>
+              <span className="text-[10px] px-2 py-0.5 rounded-full font-medium border" style={{
+                color: item.type === 'rule' ? 'var(--accent)' : 'var(--success)',
+                background: 'var(--bg-tertiary)',
+                borderColor: item.type === 'rule' ? 'var(--accent)' : 'var(--success)'
+              }}>
                 {item.type === 'rule' ? 'Deteksi' : 'Normalisasi'}
               </span>
 
@@ -89,24 +89,24 @@ function FeedItem({ item }) {
               </span>
 
               {/* Confidence */}
-              <span className="text-[10px] text-[#7d8590] ml-auto flex items-center gap-1">
+              <span className="text-[10px] text-[var(--text-secondary)] ml-auto flex items-center gap-1">
                 <Clock size={10} />
                 {item.time}
               </span>
             </div>
 
             {/* Text */}
-            <p className="text-sm text-[#e6edf3] font-medium leading-snug mb-2 line-clamp-2">
+            <p className="text-sm text-[var(--text-primary)] font-medium leading-snug mb-2 line-clamp-2">
               {item.text}
             </p>
 
             {/* Details */}
             <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3">
-              <p className="text-[11px] text-[#7d8590] flex-1 min-w-0 truncate">{item.details}</p>
+              <p className="text-[11px] text-[var(--text-secondary)] flex-1 min-w-0 truncate">{item.details}</p>
 
               <div className="flex items-center gap-2">
                 {item.targetType && (
-                  <span className="flex items-center gap-1 text-[10px] text-[#7d8590]">
+                  <span className="flex items-center gap-1 text-[10px] text-[var(--text-secondary)]">
                     {item.targetType === 'group' ? <Users size={11} /> : <User size={11} />}
                     {item.targetType === 'group' ? 'Kelompok' : 'Individu'}
                   </span>
@@ -114,10 +114,10 @@ function FeedItem({ item }) {
 
                 {/* Confidence bar */}
                 <div className="flex items-center gap-1.5">
-                  <span className="text-[10px] text-[#7d8590]">
+                  <span className="text-[10px] text-[var(--text-secondary)]">
                     {(item.result.confidence * 100).toFixed(0)}%
                   </span>
-                  <div className="w-16 h-1.5 bg-[#21262d] rounded-full overflow-hidden">
+                  <div className="w-16 h-1.5 rounded-full overflow-hidden" style={{ background: 'var(--bg-tertiary)' }}>
                     <div
                       className={`h-full rounded-full ${cfg.color.replace('text-', 'bg-')}`}
                       style={{ width: `${item.result.confidence * 100}%` }}
@@ -128,7 +128,7 @@ function FeedItem({ item }) {
             </div>
           </div>
 
-          <ChevronRight size={15} className="text-[#7d8590] shrink-0 mt-1" />
+          <ChevronRight size={15} className="text-[var(--text-secondary)] shrink-0 mt-1" />
         </div>
       </div>
     </div>
@@ -139,10 +139,10 @@ export default function Feed() {
   return (
     <div>
       <div className="flex items-center justify-between mb-3">
-        <h2 className="text-[#e6edf3] font-semibold text-sm">Riwayat Analisis</h2>
+        <h2 className="text-[var(--text-primary)] font-semibold text-sm">Riwayat Analisis</h2>
         <div className="flex items-center gap-2">
-          <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#21262d] border border-[#4a5568] text-xs text-[#e6edf3] hover:bg-[#30363d] hover:border-[#58a6ff] transition-colors">
-            <Shield size={13} className="text-[#7d8590]" />
+          <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-md border text-xs transition-colors" style={{ background: 'var(--bg-tertiary)', borderColor: 'var(--border-primary)', color: 'var(--text-primary)' }}>
+            <Shield size={13} style={{ color: 'var(--text-secondary)' }} />
             Filter
           </button>
         </div>
@@ -152,7 +152,11 @@ export default function Feed() {
           <FeedItem key={item.id} item={item} />
         ))}
       </div>
-      <button className="w-full mt-4 py-2 text-xs text-[#58a6ff] hover:text-white transition-colors border border-[#388bfd] hover:border-[#58a6ff] hover:bg-[#1f2d3d] rounded-lg">
+      <button className="w-full mt-4 py-2 text-xs rounded-lg"
+        style={{ background: 'var(--bg-secondary)', color: 'var(--text-primary)', border: '1px solid var(--border-primary)' }}
+        onMouseEnter={(e) => e.target.style.background = 'var(--bg-tertiary)'}
+        onMouseLeave={(e) => e.target.style.background = 'var(--bg-secondary)'}
+      >
         Muat lebih banyak...
       </button>
     </div>
